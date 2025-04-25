@@ -1,0 +1,20 @@
+spring:
+  main:
+    banner-mode: off
+
+  liquibase:
+    change-log: classpath:db/changelog/changelog-master.xml
+    drop-first: false
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/pretty_places
+    username: root
+    password: Loxy1517.
+
+server:
+  port: 8087
