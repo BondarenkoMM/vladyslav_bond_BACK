@@ -2,14 +2,10 @@ package com.bot.vladyslav_bond_back.place;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @Entity
 @Table(name = "places")
-@Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Place {
@@ -31,8 +27,37 @@ public class Place {
     @Column(name = "description_link")
     private String descriptionLink;
 
+    @Column(name = "lat")
+    private Double lat;
+
+    @Column(name = "lon")
+    private Double lon;
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getShortDescription() {
+        return shortDescription;
+    }
+
+    public String getMapLink() {
+        return mapLink;
+    }
+
     public String getDescriptionLink() {
         return descriptionLink;
     }
 
+    public Double getLat() {
+        return lat;
+    }
+
+    public Double getLon() {
+        return lon;
+    }
 }

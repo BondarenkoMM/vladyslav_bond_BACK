@@ -1,0 +1,23 @@
+{
+  "name": "interesting-places-map",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "src/templates/node_modules/.bin/vite",
+    "build": "src/templates/node_modules/.bin/vite build",
+    "serve": "src/templates/node_modules/.bin/vite preview"
+  },
+  "dependencies": {
+    "leaflet": "^1.7.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-leaflet": "^4.0.0",
+    "vite": "^6.3.3"
+  },
+  "devDependencies": {
+    "vite": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
